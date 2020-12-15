@@ -1,0 +1,67 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+}
+
+main {
+    width: 850px;
+    box-shadow: 0px 0px 3px 1px #adadad;
+    background-color: #b6f5f5;
+}
+
+#content:hover {
+    background-color: #ff5555;
+}
+
+#content {
+    padding: 1em;
+    border-bottom: black 3px solid;
+}
+
+    #content > h2 {
+        margin: 0;
+    }
+
+    #content > p {
+        margin: 6px 0;
+        font-size: 15px;
+    }
+
+    #content > #button-show {
+        display: flex;
+        justify-content: center;
+    }
+
+button {
+    width:200px;
+    height:30px;
+    background: linear-gradient(#34ce57, green);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .1);
+    padding: 7px;
+    border: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+dialog {
+    top: 320px;
+    border: none;
+}
+
+dialog::backdrop {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.news {
+    background-color: #e1ff73;
+    width: 520px;
+    height: 250px;
+    text-align: justify;
+}
