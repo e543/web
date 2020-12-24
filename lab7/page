@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 7</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <input id="count" value="1"><br />
+
+    <button onclick="createFigure('triangle')">Треугольник</button>
+    <button onclick="createFigure('square')">Квадрат</button>
+    <button onclick="createFigure('circle')">Круг</button>
+
+</body>
+</html>
