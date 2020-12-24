@@ -1,0 +1,21 @@
+﻿
+.square, .circle, .triangle {
+    position: fixed;
+    opacity: .8;
+}
+
+.circle {
+    border: black 1px solid;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.square {
+    border: black 1px solid;
+    background-color: red;
+}
+
+.triangle {
+    background-color: blue;
+    clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+}
