@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task 8</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body onload="makeElement()">
+    <div id="container"></div>
+    <button onclick="makeElement()">Добавить элемент</button><br />
+    <button onclick="saveElements()">Сохранить</button>
+    <div id="JSON"></div>
+</body>
+</html>
