@@ -1,0 +1,132 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.curtain {
+    display: flex;
+    position: relative;
+    top: 0;
+    height: inherit;
+    background: url("curtain.jpg") no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    z-index: 5;
+    transition: top 0.2s ease;
+}
+
+.curtain:hover {
+    top: -5%;
+}
+
+.left-side {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    width: calc(50% - 43.6vw);
+    height: 100vh;
+}
+
+.right-side {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    width: calc(50% - 43.6vw);
+    height: 100vh;
+}
+
+.lamp {
+    position: fixed;
+    margin: auto;
+    left: 0;
+}
+
+#lamp {
+    top: 5vh;
+    right: 0;
+    width: 11vh;
+    z-index: 4;
+}
+
+#pull {
+    top: 9vh;
+    right: 6vh;
+    width: 1.2vh;
+    z-index: 0;
+    transition: top 0.2s cubic-bezier(0, .5, .5, 1);
+}
+
+.attention {
+    position: fixed;
+    bottom: 8vh;
+    transition: opacity 0.2s linear;
+}
+
+#light {
+    position: fixed;
+    pointer-events: none;
+    top: -60vh;
+    margin: auto;
+    left: 50%;
+    opacity: 0;
+    border-bottom: 80vh solid yellow;
+    border-left: 40vh solid transparent;
+    border-right: 40vh solid transparent;
+    height: 0;
+    width: 10vh;
+    transform: translate(-50%, 0);
+    z-index: 3;
+    bottom: -60vh;
+    transition: opacity 0.2s linear;
+}
+
+#wizard {
+    opacity: 0;
+    width: 50vh;
+    left: calc(50% - 36vh);
+    z-index: 0;
+}
+
+#hat {
+    opacity: 0;
+    left: calc(50% + 7vh);
+    bottom: 15vh;
+    width: 18vh;
+    transform: rotate(180deg);
+    z-index: 2;
+}
+
+.focus {
+    opacity: 0;
+    left: calc(50% + 10vh);
+    bottom: 15vh;
+    width: 12vh;
+    z-index: 1;
+}
+
+#rabbit {
+    width: 10vh;
+    transition: opacity 0.2s linear,
+        bottom 0.5s cubic-bezier(0, .5, .5, 1),
+        visibility 0.2s linear;
+    visibility: hidden;
+}
+
+#pigeon {
+    width: 10vh;
+    transition: opacity 0.2s ease,
+        bottom 0.5s cubic-bezier(0, .5, .5, 1),
+        visibility 0.2s ease;
+    bottom: 35vh;
+}
