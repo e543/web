@@ -1,0 +1,51 @@
+﻿body {
+    display: flex;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    font: "Arial";
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 65px 65px 65px 65px 65px;
+    grid-template-rows: 50px 65px 65px 65px 65px;
+    grid-template-areas: "display display display display display" "digit7  digit8  digit9  slash   C" "digit4  digit5  digit6  star    back" "digit1  digit2  digit3  minus   equality" "digit0  digit0  dot     plus    equality";
+    grid-gap: 5px;
+    padding: 8px;
+    border: 3px teal solid;
+    width: auto;
+    margin-right: auto;
+}
+
+    .container > * {
+        font-size: x-large;
+    }
+
+.display {
+    font-size: xx-large;
+    display: flex;
+    justify-content: flex-end;
+    grid-area: display;
+    text-align: right;
+    color: gray;
+    border: black 1px solid;
+    padding: 5px;
+}
+
+    .display > * {
+        margin: auto 0 auto 5px;
+    }
+
+span:last-child {
+    color: black;
+}
+
+.equality {
+    grid-area: equality;
+}
+
+.digit0 {
+    grid-area: digit0;
+}
